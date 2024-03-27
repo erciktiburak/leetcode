@@ -20,7 +20,7 @@ class Solution {
                 int left = j + 1;
                 int right = nums.length - 1;
                 while (left < right) {
-                    int sum = nums[i] + nums[j] + nums[left] + nums[right];
+                    long sum = (long)nums[i] + (long)nums[j] + (long)nums[left] + (long)nums[right];
                     if (sum == target) {
                         result.add(Arrays.asList(nums[i], nums[j], nums[left], nums[right]));
                         while (left < right && nums[left] == nums[left + 1]) {
